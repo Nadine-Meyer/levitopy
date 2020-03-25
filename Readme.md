@@ -30,7 +30,7 @@ levitopy
 └───images                  //images related to levitodynamics
 └───notebooks               //example notebooks
 └───levitopy                //main code folder - this 
-│   └───calibration         //code related to calibration of data
+│   └───data_analysis         //code related to calibration of data
 │   └───simulation          //code related to simulations
 │   └───theory              //code related to levitodynamics theory
 ```
