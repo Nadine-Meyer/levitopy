@@ -26,13 +26,16 @@ The project is structured as follows
 
 ```
 levitopy
-└───data                    //example data 
-└───images                  //images related to levitodynamics
-└───notebooks               //example notebooks
-└───levitopy                //main code folder - this 
-│   └───data_analysis         //code related to calibration of data
-│   └───simulation          //code related to simulations
-│   └───theory              //code related to levitodynamics theory
+└───data                            //example data 
+└───images                          //images related to levitodynamics
+└───notebooks                       //example notebooks
+└───levitopy                        //main code folder - this 
+│   └───data_analysis               //code related to data analysis of data
+│       └───calibration.py          //useful functions
+│       └───signal processing.py    //signal processing of raw data (e.g. psd from timetrace)
+│   └───simulation                  //code related to simulations
+│   └───theory                      //code related to levitodynamics theory
+│   └───utils.py                    //useful functions (e.g. load/save timetag)
 ```
 
 ### data
@@ -59,6 +62,7 @@ An easy way to clone and push to the repository it to use the integrated version
 
 
 ## Best practice guidelines
+- Commit notebooks as markdown files (.md), .ipynb files should not be commited! To autosave to .md, install ![jupytext](https://jupytext.readthedocs.io/en/latest/install.html) and then select *file=>jupytext=>markdown* in the jupyter notebook. 
 - Follow general coding best practices, keeping in mind that the code is suppose to be read and understood by someone else.
 - Add a docstring to *every* function!
 - If you want to update the current package version of `levitopy` update the version number `__init__.py` file and the `comment_on_changes` string variable.

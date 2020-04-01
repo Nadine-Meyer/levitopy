@@ -1,11 +1,12 @@
 # collection of signal processing functions
 
+import numpy as np
+
 def power_spectral_density(x, time_step, freq_range=None, N_pieces=None):
     """
     returns the *single sided* power spectral density of the time trace x which is sampled at intervals time_step
 
-
-    gives the same result as scipy.scipy.signal where N_piece = len(x) / nperseg and window = 'boxcar'
+    gives the same result as scipy.signal.welch where N_piece = len(x) / nperseg and window = 'boxcar'
 
     Args:
         x (array):  timetrace
