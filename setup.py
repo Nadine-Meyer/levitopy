@@ -4,7 +4,7 @@ from levitopy import __version__ as current_version
 # NOTES for updating this file:
 # 1) for version update in the levitopy.__init__
 # 2) update the following comment_on_changes
-comment_on_changes = 'added experimental parameter funcitions'
+comment_on_changes = 'added experimental parameter funcitions for cavity, trap and particle'
 
 setup(
     name='levitopy',
